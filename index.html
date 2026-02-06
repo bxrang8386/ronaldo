@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>form</title>
+</head>
+<style type="text/css">
+/* ===== RESET CƠ BẢN ===== */
+* {
+    box-sizing: border-box;
+}
+/* ===== BODY + BACK MinhNGocMinhNGocGROUND ===== */
+body {
+    margin: 0;
+    font-family: Verdana, Arial, sans-serif;
+    background: url("background.avif") center / cover no-repeat fixed;
+    color: #eaf6ff;
+}
+/* ===== KHUNG HEADER ===== */
+.init {
+    margin: 20px;
+    padding: 15px;
+    border: 2px solid rgba(0, 255, 255, 0.5);
+    background-color: rgba(0, 30, 60, 0.75);
+    border-radius: 12px;
+}
+/* ===== HEADER CONTENT  MinhNGocMinhNGoc===== */ 
+.header {
+    display: flex;
+    align-items: center;
+}
+.logo {
+    flex: 1;
+    text-align: center;
+    color: #ffffff;
+}
+.logo img {
+    max-height: 120px;
+}
+.title {
+    flex: 3;
+    font-size: 32px;
+    font-weight: bold;
+    color: #00e5ff;
+    text-align: center;
+}
+/* ===== THANH ME MinhNGocMinhNGocNU ===== */
+nav {
+    background: rgba(0, 80, 120, 0.9);
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+}
+nav a {
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav a:hover {
+    background-color: #00e5ff;
+    color: #002b36;
+    border-radius: 6px;
+}
+/* ===== DROP MinhNGocMinhNGocDOWN MENU ===== */
+.dropdown {
+    position: relative;
+}
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    padding: 15px 20px;
+    background-color: inherit;
+    font-family: inherit;
+    font-weight: bold;
+    cursor: pointer;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 90, 140, 0.95);
+    min-width: 180px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.4);
+    z-index: 10;
+    border-radius: 8px;
+}
+.dropdown-content a {
+    color: #ffffff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dropdown-content a:hover {
+    background-color: #00e5ff;
+    color: #002b36;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+/* ===== MAIN CONTENT ===== */
+.main {
+    margin: 10px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+/* ===== BOX / CARD ===== */
+.box {
+    flex: 1 1 calc(50% - 20px);
+    padding: 15px;
+    border-radius: 14px;
+    border: 1px solid rgba(255,255,255,0.35);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+    background-color: rgba(255, 255, 255, 0.88);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    .box:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 35px rgba(0,0,0,0.35);
+    color: #002b36;
+}
+/* ===== TIÊU ĐỀ ===== */
+h1 {
+    color: #005eff;
+    font-family: Tahoma, Arial, sans-serif;
+}
+/* ===== BẢNG ===== */
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+th, td {
+    border: 2px solid #00334d;
+    padding: 12px;
+    text-align: center;
+    vertical-align: middle;
+    color: #00334d;
+    background-color: #f9fdff;
+}
+th {
+    font-size: 20px;
+    background-color: #e0f7ff;
+    color: #00334d;
+}
+td img {
+    max-width: 100%;
+    height: auto;
+}
+/* ===== FOOTER ===== */
+.footer {
+    margin: 20px;
+    padding: 20px;
+    color: #ffffff;
+    background: rgba(0, 40, 80, 0.75);
+    border-radius: 12px;
+    text-align: center;
+}
+.form-box{
+  background: rgba(0,40,70,0.75);
+  color:#eaf6ff;
+  border-radius:12px;
+}
+
+</style>
+<body>
+<div class="init header">
+  <div class="logo">
+    <img src="pen7.jfif" alt="Err" style="width: 30%; height: auto;">
+  </div>
+  <div class="title">
+    HUYỀN THOẠI HÀN QUỐC RONALDO
+  </div>
+</div>
+<!-- Thanh menu -->
+    <nav>
+        <a href="index.html">Trang chủ</a>
+        <a href="lmao.html">Giới thiệu</a> 
+      
+        <!-- Menu Dịch vụ có menu con -->
+        <div class="dropdown">
+            <button class="dropbtn">Lựa chọn</button>
+            <div class="dropdown-content">
+                <a href="doihinhwc2022.html"> WC 2022 </a>
+                <a href="doihinhwc2014.html"> EURO 2024 </a>
+                
+            </div>
+        </div>
+        <a href="lienhe.html">Liên hệ</a>
+        <a href="thanhvien.html" target="_blank">Về chúng tôi</a>
+        <a href="https://ngoccs.edu.vn" target="_blank">Người hướng dẫn</a>
+    </nav>
+	<div class="main">
+        <div class="box">
+            <h1> THƠ CA </h1>
+            <table>
+            <tr style="font-style: italic;"> <td width="300">    
+            Chấm pen ai vẽ mà tròn<br>
+            Cỏ này ai cắt mà còn hơi cao<br>
+            Cỏ cao thì kệ cỏ cao<br>
+            Vấp vào ngã quỵ kêu gào đòi pen<br>
+            Nhẹ nhàng cầm trái bóng lên<br>
+            Đối thủ ngơ ngác đan xen bực mình<br>
+            Mở VAR check lại khung hình<br>
+            Ra là anh Bảy tự mình vấp pen.  <br>         
+            </td>
+        </tr>
+    </table>
+    
+            <p style="color: red;"> <em> Tác giả: Võ Lê Gia Duy </em>
+        </div>
+        <div class="box">
+            <h1> Hình ảnh </h1>
+           <img src="pen2.jpg" alt="Err" style="width: 30%; height: auto;">
+           <!-- Menu Dịch( Minh Ngọc ) vụ có menu con -->
+           <img src="pen5.jpg" alt="Err" style="width: 30%; height: auto;">
+           <img src="pen6.jpg" alt="Err" style="width: 30%; height: auto;">
+           
+        </div>
+        
+        <div class="box">
+            <h1> 🎵 Góc Âm Nhạc </h1>
+           <audio controls>
+            <source src="nhac.mp3" type="audio/mpeg">
+            Trình duyệt của bạn không hỗ trợ audio.
+        </audio>
+        </div>
+    <div class="box">
+            <h1>Danh mục Video</h1>
+              <video controls width="300" height="200">
+    <source src="pen3.mp4">
+  </video>
+  <video controls width="300" height="200">
+    <source src="pen4.mp4">
+  </video>
+        </div>
+</div>
+<table width="80%" align="center" class="form-box">
+    <tr>
+        <td>
+            <b>Đóng góp ý kiến:</b><br><br>
+
+            <form>
+                Họ và tên:<br>
+                <input type="text" size="30"><br><br>
+
+                Email:<br>
+                <input type="email" size="30"><br><br>
+
+                Ý kiến góp ý:<br>
+                <textarea rows="4" cols="40"></textarea><br><br>
+
+                <input type="submit" value="Gửi">
+                <input type="reset" value="Nhập lại">
+            </form>
+        </td>
+    </tr>
+</table>
+
+<br>
+	    <div class="init footer"> 
+        <div style="color: red;"> ©️ NHÓM/TÁC GIẢ: lhutao x vtbngoc 💗 </div>
+        <div style="color: blue;"> 📧 Địa chỉ: Lớp 12A - THPT NBK - Gia Lai </div>
+        <div style="color: violet;"> 📧 Email: langtucodon24112008@gmail.com </div>
+    </div>
+</body>
+</html>
